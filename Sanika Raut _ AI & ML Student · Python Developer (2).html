@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanika Raut | AI &amp; ML Student · Python Developer</title>
+<meta name="description" content="Portfolio of Sanika Vipin Raut, a 2nd-year B.Tech AI &amp; ML student and aspiring AI Engineer skilled in Python, HTML, CSS and DBMS.">
+<meta name="author" content="Sanika Vipin Raut">
+<meta property="og:title" content="Sanika Raut | AI &amp; ML Portfolio">
+<meta property="og:description" content="Aspiring AI Engineer · Python Developer · B.Tech AI &amp; ML">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5ecdc;--sf:#fbf4e6;--navy:#0b2545;--bd:#dccfb4;--ink:#0b2545;--mu:#4a5568;--ac:#0f766e;--amb:#f5a524;--soft:#e4efe9;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--navy);z-index:60}
+h1,h2,h3{font-family:"Space Grotesk",Inter,sans-serif;line-height:1.15;margin:0 0 .5em;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--amb);outline-offset:3px}
+.skip{position:absolute;left:-999px;top:0;background:var(--amb);color:var(--navy);padding:8px 14px;z-index:999}.skip:focus{left:8px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:calc(14px + env(safe-area-inset-top,0px)) 5% 14px;display:flex;justify-content:space-between;align-items:center;background:var(--navy);color:var(--sf)}
+.logo{font:700 1.3rem "Space Grotesk",sans-serif}.logo::after{content:".";color:var(--amb)}
+.links{display:flex;gap:26px;list-style:none;margin:0;padding:0}
+.links a{display:block;color:#b9d3cf;font-weight:500;font-size:.94rem;padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+.links a:hover,.links a.act{color:var(--sf);border-color:var(--amb)}
+#menu{display:none;background:none;border:1px solid rgba(251,244,230,.4);color:var(--sf);border-radius:8px;padding:6px 12px;font-size:1.1rem;cursor:pointer}
+section{padding:96px 5% 24px;max-width:1080px;margin:0 auto;position:relative}
+.hero{min-height:92vh;display:flex;flex-direction:column;justify-content:center;padding-top:130px;padding-bottom:70px;color:var(--sf)}
+.hero::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);background:radial-gradient(circle at 85% 18%,rgba(245,165,36,.38),transparent 42%),radial-gradient(circle at 10% 90%,rgba(15,157,143,.45),transparent 45%),linear-gradient(135deg,#0b2545,#0f5f68)}
+.tag{align-self:flex-start;padding:5px 14px;border-radius:99px;background:rgba(245,165,36,.18);color:var(--amb);border:1px solid rgba(245,165,36,.5);font-size:.85rem;font-weight:600;margin-bottom:22px}
+h1{font-size:clamp(2.3rem,6.5vw,4.3rem);max-width:14ch}
+.grad{color:var(--amb)}
+.sub{color:#cfe3e0;font-size:1.08rem;max-width:640px}
+.typed{font:600 1.3rem "Space Grotesk",sans-serif;min-height:2em;margin:8px 0;color:#7ce3d6}
+.typed::after{content:"|";margin-left:3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.btns{display:flex;flex-wrap:wrap;gap:14px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:8px;font-weight:600;border:1.5px solid var(--ink);background:transparent;cursor:pointer;color:var(--ink);font-size:.98rem;font-family:inherit;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn.pri{background:var(--ac);border-color:var(--ac);color:var(--sf)}
+.btn:hover{transform:translateY(-2px)}.btn:not(.pri):hover{background:var(--ink);color:var(--sf)}.btn.pri:hover{background:#0b5e58}
+.hero .btn.pri{background:var(--amb);border-color:var(--amb);color:var(--navy);box-shadow:0 8px 24px rgba(245,165,36,.35)}
+.hero .btn:not(.pri){border-color:rgba(251,244,230,.6);color:var(--sf)}.hero .btn:not(.pri):hover{background:var(--sf);color:var(--navy)}
+.stats{display:flex;flex-wrap:wrap;gap:36px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(251,244,230,.25);max-width:640px}
+.stats b{display:block;font-family:"Space Grotesk",sans-serif;font-size:1.3rem;color:var(--amb)}.stats span{font-size:.85rem;color:#b9d3cf}
+.card{background:var(--sf);border:1px solid var(--bd);border-top:4px solid var(--ac);border-radius:14px;padding:26px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(11,37,69,.14)}
+.g3>.card:nth-child(3n+2){border-top-color:var(--amb)}.g3>.card:nth-child(3n){border-top-color:#2b6cb0}
+.title{font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:28px;padding-bottom:12px;position:relative}
+.title::after{content:"";position:absolute;left:0;bottom:0;width:64px;height:4px;background:linear-gradient(90deg,var(--ac),var(--amb));border-radius:4px}
+.title span{color:var(--ac)}
+.grid{display:grid;gap:24px}.g2c{grid-template-columns:1.2fr 1fr}.g3{grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.info{list-style:none;padding:0;margin:0;display:grid;gap:12px}.info b{color:var(--ac)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chips span{padding:4px 12px;border-radius:99px;background:var(--navy);color:var(--sf);font-size:.84rem;font-weight:500}
+.skill .top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.ico{width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,var(--ac),#0b2545);display:grid;place-items:center;flex:none}
+.ico svg{width:24px;height:24px;fill:none;stroke:var(--sf);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.top h3{margin:0;flex:1}.top em{font-style:normal;color:var(--ac);font-weight:700}
+.bar{height:8px;background:#e6d9bf;border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--ac),var(--amb));border-radius:9px;transition:width 1.2s cubic-bezier(.2,.8,.2,1)}
+.thumb{height:150px;border-radius:10px;margin-bottom:18px;display:grid;place-items:center;font:600 1.1rem "Space Grotesk",sans-serif;text-align:center;padding:10px;position:relative;overflow:hidden;color:var(--sf)}
+.card p{color:var(--mu);margin:0 0 16px}
+.meta{display:flex;gap:16px;color:var(--mu);font-size:.88rem;margin-bottom:16px;flex-wrap:wrap}
+.card .btn{padding:7px 18px;font-size:.9rem}
+.lang{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--amb);margin-right:6px}
+#note{color:var(--mu)}
+.contrib{margin-top:26px;text-align:center;overflow-x:auto}.contrib img{max-width:100%;min-width:640px;height:auto}
+form{display:grid;gap:16px}
+label{font-size:.9rem;font-weight:500;display:block;margin-bottom:6px;color:var(--mu)}
+input,textarea{width:100%;padding:11px 14px;border-radius:8px;border:1px solid #c9b992;background:var(--bg);color:var(--ink);font:inherit;transition:border-color .2s,box-shadow .2s}
+input:focus,textarea:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(15,118,110,.2)}
+textarea{min-height:130px;resize:vertical}
+.err{color:#b42318;font-size:.82rem;min-height:1.1em;display:block}
+#status{font-weight:500}
+.soc{display:flex;gap:12px;margin-top:18px}
+.soc a{width:42px;height:42px;border-radius:10px;border:1px solid var(--bd);display:grid;place-items:center;background:var(--bg);transition:.2s}
+.soc a:hover{background:var(--ac);border-color:var(--ac);transform:translateY(-2px)}
+.soc svg{width:20px;height:20px;fill:var(--ink);transition:fill .2s}.soc a:hover svg{fill:var(--sf)}
+footer{margin-top:90px;background:var(--navy);color:#d7e4e2;padding:46px 5% calc(24px + env(safe-area-inset-bottom,0px));border-top:4px solid var(--amb)}
+.fw{max-width:1080px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{margin:0 0 12px;font-family:"Space Grotesk",sans-serif;font-size:1.15rem;color:var(--amb)}footer ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}footer a:hover{color:var(--amb)}
+footer p{margin:0;opacity:.85}.copy{text-align:center;font-size:.88rem;margin-top:34px;opacity:.7}
+footer .soc a{background:transparent;border-color:rgba(251,244,230,.3)}footer .soc svg{fill:var(--sf)}
+#top{position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));width:44px;height:44px;border-radius:50%;border:0;background:var(--amb);color:var(--navy);font-size:1.2rem;font-weight:700;cursor:pointer;opacity:0;visibility:hidden;transform:translateY(16px);transition:.3s;z-index:40;box-shadow:0 6px 16px rgba(11,37,69,.3)}
+#top.show{opacity:1;visibility:visible;transform:none}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(max-width:820px){
+.g2c,.fw{grid-template-columns:1fr}
+#menu{display:block}
+.links{position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);max-height:0;overflow:hidden;visibility:hidden;transition:max-height .3s;padding:0 5%}
+.links.open{max-height:460px;visibility:visible}.links a{padding:14px 0;border:0}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<nav aria-label="Main navigation">
+  <a href="#home" class="logo">Sanika.</a>
+  <button id="menu" aria-label="Toggle menu" aria-expanded="false">☰</button>
+  <ul class="links" id="links">
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#github">GitHub</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main">
+<section id="home" class="hero">
+  <div>
+    <span class="tag">✨ Open to internships &amp; collaborations</span>
+    <h1>Hello, I’m <span class="grad">Sanika Raut</span></h1>
+    <p class="sub"><strong>Artificial Intelligence &amp; Machine Learning Student | Aspiring AI Engineer | Python Developer</strong></p>
+    <div class="typed" id="typed" aria-live="off"></div>
+    <p class="sub">I am passionate about technology, programming, and artificial intelligence. I love learning new skills and building creative projects that solve real-world problems.</p>
+    <div class="btns">
+      <a class="btn pri" href="#projects">View My Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+    <div class="stats"><div><b>2nd Year</b><span>B.Tech AI &amp; ML</span></div><div><b>Python</b><span>Core language</span></div><div><b>AI / ML</b><span>Career goal</span></div></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="title rv">About <span>Me</span></h2>
+  <div class="grid g2c">
+    <div class="card rv">
+      <p>I’m Sanika Vipin Raut, a 2nd-year B.Tech student in Artificial Intelligence and Machine Learning. I enjoy turning ideas into working software, from clean web interfaces to data-driven programs, and I’m always exploring new tools and concepts to grow as a developer.</p>
+      <div class="chips"><span>Artificial Intelligence</span><span>Machine Learning</span><span>Web Development</span><span>Programming</span></div>
+    </div>
+    <div class="card rv">
+      <ul class="info">
+        <li><b>🎓 Education:</b> B.Tech in Artificial Intelligence and Machine Learning</li>
+        <li><b>🏫 College:</b> St. John College of Engineering and Management</li>
+        <li><b>📅 Current Year:</b> 2nd Year</li>
+        <li><b>📍 Location:</b> Boisar, Maharashtra, India</li>
+        <li><b>🎯 Career Goal:</b> To become a skilled AI/ML Engineer</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2 class="title rv">Technical <span>Skills</span></h2>
+  <div class="grid g3" id="skillGrid"></div>
+</section>
+
+<section id="projects">
+  <h2 class="title rv">Featured <span>Projects</span></h2>
+  <div class="grid g3" id="projGrid"></div>
+</section>
+
+<section id="github">
+  <h2 class="title rv">GitHub <span>Repositories</span></h2>
+  <p id="note" class="rv">Loading latest repositories from GitHub…</p>
+  <div class="grid g3" id="repoGrid"></div>
+  <div class="btns" style="justify-content:center"><a class="btn pri" href="https://github.com/sanikar239-creator" target="_blank" rel="noopener">View on GitHub</a></div>
+  <div class="contrib card rv"><img id="graph" alt="GitHub contribution activity for sanikar239-creator" loading="lazy" src="https://ghchart.rshah.org/0f766e/sanikar239-creator" onerror="this.parentNode.innerHTML='<a class=&quot;btn&quot; href=&quot;https://github.com/sanikar239-creator&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;>See contribution activity on GitHub</a>'"></div>
+</section>
+
+<section id="contact">
+  <h2 class="title rv">Get In <span>Touch</span></h2>
+  <div class="grid g2c">
+    <div class="card rv">
+      <h3>Let’s connect</h3>
+      <p>Looking for an intern or collaborator? Send me a message and I’ll reply soon.</p>
+      <ul class="info">
+        <li><b>✉ Email:</b> <a href="mailto:sanikar239@gmail.com">sanikar239@gmail.com</a></li>
+        <li><b>📍 Location:</b> Boisar, Maharashtra, India</li>
+      </ul>
+      <div class="soc"><a href="https://github.com/sanikar239-creator" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a></div>
+    </div>
+    <form class="card rv" id="form" novalidate>
+      <div><label for="n">Name</label><input id="n" name="name" autocomplete="name" required><span class="err" id="en"></span></div>
+      <div><label for="e">Email</label><input id="e" name="email" type="email" autocomplete="email" required><span class="err" id="ee"></span></div>
+      <div><label for="m">Message</label><textarea id="m" name="message" required></textarea><span class="err" id="em"></span></div>
+      <button class="btn pri" type="submit" id="send">Send Message ➤</button>
+      <span id="status" role="status"></span>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="fw">
+    <div><h4 class="grad">Sanika Raut</h4><p style="color:var(--mu);margin:0">AI &amp; ML student and aspiring AI Engineer building creative, real-world projects with Python and the web.</p>
+      <div class="soc"><a href="https://github.com/sanikar239-creator" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+      <a id="li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn" hidden><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.800v1.600c.6-1 1.900-1.900 3.900-1.900 4 0 4.800 2.600 4.800 6V21h-4v-5c0-1.300 0-2.900-1.800-2.900s-2.100 1.400-2.100 2.800V21h-4z"/></svg></a></div></div>
+    <div><h4>Quick Links</h4><ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#github">GitHub</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li><a href="mailto:sanikar239@gmail.com">sanikar239@gmail.com</a></li><li>Boisar, Maharashtra, India</li></ul></div>
+  </div>
+  <p class="copy">© 2026 Sanika Raut. All Rights Reserved.</p>
+</footer>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+/* ====== EASY-EDIT CONFIG ====== */
+const CONFIG = {
+  githubUser: "sanikar239-creator",
+  email: "sanikar239@gmail.com",
+  linkedin: "https://www.linkedin.com/in/sanika-raut-3b0116450",
+  formEndpoint: "",        // optional: Formspree URL (https://formspree.io/f/xxxx) for direct sending
+  roles: ["AI & ML Student","Aspiring AI Engineer","Python Developer","Web Enthusiast"]
+};
+const SKILLS = [
+  {name:"Python",level:80,icon:'<path d="M8 9h8a3 3 0 0 0 3-3V5a2 2 0 0 0-2-2h-5a3 3 0 0 0-3 3v3m8 6H8a3 3 0 0 0-3 3v1a2 2 0 0 0 2 2h5a3 3 0 0 0 3-3v-3"/><path d="M8 9v6m8-6v6"/>'},
+  {name:"HTML",level:85,icon:'<path d="m8 6-6 6 6 6M16 6l6 6-6 6"/>'},
+  {name:"CSS",level:75,icon:'<path d="M8 3H6a2 2 0 0 0-2 2v4a2 2 0 0 1-2 3 2 2 0 0 1 2 3v4a2 2 0 0 0 2 2h2M16 3h2a2 2 0 0 1 2 2v4a2 2 0 0 0 2 3 2 2 0 0 0-2 3v4a2 2 0 0 1-2 2h-2"/>'},
+  {name:"DBMS",level:70,icon:'<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.700 3.600 3 8 3s8-1.300 8-3V5M4 12c0 1.700 3.600 3 8 3s8-1.300 8-3"/>'}
+];
+/* Add a new project by copying one object below */
+const PROJECTS = [
+  {title:"Smart Medical Management System",desc:"A medical management website designed to manage patient-related information and simplify medical services.",tags:["Web","Healthcare"],url:"https://comfy-care-desk.lovable.app/",img:"",grad:"linear-gradient(135deg,#0f9d8f,#0b2545)"},
+  {title:"Document Verification",desc:"A web platform for verifying important documents, for example Aadhar card and Caste certificate.",tags:["Web","Verification"],url:"https://document-verification-3ep0.onrender.com",img:"",grad:"linear-gradient(135deg,#2b6cb0,#0b2545)"}
+];
+const $=s=>document.querySelector(s), esc=t=>String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+/* Skills */
+$("#skillGrid").innerHTML=SKILLS.map(s=>`<div class="card skill rv"><div class="top"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true">${s.icon}</svg></div><h3>${s.name}</h3><em>${s.level}%</em></div><div class="bar" role="progressbar" aria-label="${s.name} proficiency" aria-valuenow="${s.level}" aria-valuemin="0" aria-valuemax="100"><i data-w="${s.level}"></i></div></div>`).join("");
+/* Projects */
+$("#projGrid").innerHTML=PROJECTS.map(p=>`<article class="card rv"><div class="thumb" style="background:${p.grad}">${p.img?`<img src="${esc(p.img)}" alt="${esc(p.title)}" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">`:esc(p.title)}</div><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><div class="chips" style="margin:0 0 16px">${p.tags.map(t=>`<span>${esc(t)}</span>`).join("")}</div><a class="btn pri" href="${esc(p.url)}" target="_blank" rel="noopener">Live Demo ↗</a></article>`).join("");
+
+/* GitHub repos (live via REST API) */
+fetch(`https://api.github.com/users/${CONFIG.githubUser}/repos?sort=updated&per_page=9`).then(r=>{if(!r.ok)throw 0;return r.json()}).then(list=>{
+  const repos=list.filter(r=>!r.fork);
+  if(!repos.length){$("#note").textContent="No public repositories yet. New ones will appear here automatically.";return}
+  $("#note").remove();
+  $("#repoGrid").innerHTML=repos.map(r=>`<article class="card rv in"><h3>${esc(r.name)}</h3><p>${esc(r.description||"No description provided.")}</p><div class="meta"><span><i class="lang"></i>${esc(r.language||"Other")}</span><span>★ ${r.stargazers_count}</span><span>⑂ ${r.forks_count}</span></div><a class="btn" href="${esc(r.html_url)}" target="_blank" rel="noopener">View on GitHub ↗</a></article>`).join("");
+}).catch(()=>{$("#note").innerHTML=`Couldn’t load repositories right now. <a class="grad" href="https://github.com/${CONFIG.githubUser}?tab=repositories" target="_blank" rel="noopener">Browse them on GitHub ↗</a>`});
+
+/* LinkedIn */
+if(CONFIG.linkedin){const l=$("#li");l.href=CONFIG.linkedin;l.hidden=false;const c=l.cloneNode(true);c.removeAttribute("id");$("#contact .soc").appendChild(c)}
+
+/* Typing roles */
+(()=>{const el=$("#typed");let i=0,j=0,del=false;(function t(){const w=CONFIG.roles[i];el.textContent=w.slice(0,j);if(!del&&j===w.length){del=true;return setTimeout(t,1400)}if(del&&j===0){del=false;i=(i+1)%CONFIG.roles.length}j+=del?-1:1;setTimeout(t,del?45:85)})()})();
+
+/* Mobile menu + active link */
+const menu=$("#menu"),links=$("#links");
+menu.onclick=()=>{const o=links.classList.toggle("open");menu.setAttribute("aria-expanded",o)};
+links.querySelectorAll("a").forEach(a=>a.onclick=()=>{links.classList.remove("open");menu.setAttribute("aria-expanded",false)});
+const secs=[...document.querySelectorAll("section")],nav=[...links.querySelectorAll("a")];
+addEventListener("scroll",()=>{
+  const y=scrollY+140;let cur="home";secs.forEach(s=>{if(s.offsetTop<=y)cur=s.id});
+  nav.forEach(a=>a.classList.toggle("act",a.getAttribute("href")==="#"+cur));
+  $("#top").classList.toggle("show",scrollY>500)},{passive:true});
+$("#top").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+
+/* Scroll reveal + skill bars */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");const b=e.target.querySelector(".bar i");if(b)b.style.width=b.dataset.w+"%";io.unobserve(e.target)}}),{threshold:.15});
+const watch=()=>document.querySelectorAll(".rv:not(.in)").forEach(el=>io.observe(el));watch();
+
+/* Contact form: validation + Formspree (if set) or email app fallback */
+const F=$("#form"),st=$("#status");
+F.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const n=F.name.value.trim(),m=F.email.value.trim(),g=F.message.value.trim();
+  const en=n.length<2?"Please enter your name.":"",
+        ee=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(m)?"":"Please enter a valid email address.",
+        em=g.length<10?"Message should be at least 10 characters.":"";
+  $("#en").textContent=en;$("#ee").textContent=ee;$("#em").textContent=em;
+  if(en||ee||em){st.textContent="";return}
+  if(CONFIG.formEndpoint){
+    st.textContent="Sending…";
+    try{const r=await fetch(CONFIG.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({name:n,email:m,message:g})});
+      if(!r.ok)throw 0;st.textContent="✅ Thanks! Your message has been sent.";F.reset();return}catch{st.textContent="Couldn’t send directly, opening your email app instead…"}
+  }
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Portfolio message from "+n)}&body=${encodeURIComponent(g+"\n\nFrom: "+n+" ("+m+")")}`;
+  st.textContent="📧 Opening your email app with the message ready to send.";
+});
+</script>
+</body>
+</html>
